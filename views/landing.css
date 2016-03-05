@@ -1,0 +1,49 @@
+html{
+  background: black;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container{
+  height: 1000px;
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -530px;
+}
+
+.square{
+  height: 94%;
+  width: 94%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -47% 0 0 -47%;
+}
+
+.black{ 
+  background: black;  
+  animation: rotate 35s infinite linear; 
+}
+
+@keyframes rotate{
+  0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }  
+}
+
+.text-box {
+	font-family: futura;
+	text-align: center;
+	font-size: 27px; 
+  position: absolute;
+  z-index: 3; 
+  color: #df0020;
+  font-weight: bold;
+  margin: 0 15%;
+  top: -12em;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}

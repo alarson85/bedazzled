@@ -1,0 +1,12 @@
+
+
+ #main-wrapper{
+ 	margin-top: 0; 
+ 	background-color: black;
+ 	z-index: 5;
+	background-image: url('graphics/Snake-g.png');
+	width: 100%;
+	height:1200px;
+	background-position: right;
+	background-repeat: no-repeat;
+}

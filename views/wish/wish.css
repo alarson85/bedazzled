@@ -1,0 +1,32 @@
+
+
+.wish-header{
+
+	font-family: 'Brush Script MT', cursive;
+	font-style: oblique;
+	color: #23cdfe;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 27.5px;
+}
+
+button {
+	background-color: #23cdfe;
+}
+
+body {
+	background-color: #000417;
+	color: white;
+}
+
+.wishes-wrapper{
+  max-width:100%;
+  display: flex; /* or inline-flex */
+  flex-direction: row
+  align-content: center;
+  justify-content: space-around;
+}
+
+div {
+	border: 2px solid red;
+}
