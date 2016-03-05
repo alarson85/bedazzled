@@ -1,6 +1,82 @@
+@font-face {
+	font-family: 'Monoton';
+  	font-style: normal;
+  	font-weight: 400;
+  	src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+}
+
+@-webkit-keyframes neonAnimation {
+  from {
+   	text-shadow: 0 0 10px #FF1177,
+                 0 0 20px  #FF1177,
+                 0 0 30px  #FF1177,
+                 0 0 40px  #FF1177,
+                 0 0 70px  #FF1177,
+                 0 0 80px  #FF1177,
+                 0 0 100px #FF1177,
+                 0 0 150px #FF1177;
+    }
+    to {
+    text-shadow: 0 0 5px #FF1177,
+                 0 0 10px #FF1177,
+                 0 0 15px #FF1177,
+                 0 0 20px #FF1177,
+                 0 0 35px #FF1177,
+                 0 0 40px #FF1177,
+                 0 0 50px #FF1177,
+                 0 0 75px #FF1177;
+        }
+      }
+
+@-moz-keyframes neonAnimation {
+  from {
+    text-shadow: 0 0 10px #FF1177,
+                 0 0 20px  #FF1177,
+                 0 0 30px  #FF1177,
+                 0 0 40px  #FF1177,
+                 0 0 70px  #FF1177,
+                 0 0 80px  #FF1177,
+                 0 0 100px #FF1177,
+                 0 0 150px #FF1177;
+  }
+  to {
+          text-shadow: 0 0 5px #FF1177,
+                     0 0 10px #FF1177,
+                     0 0 15px #FF1177,
+                     0 0 20px #FF1177,
+                     0 0 35px #FF1177,
+                     0 0 40px #FF1177,
+                     0 0 50px #FF1177,
+                     0 0 75px #FF1177;
+        }
+      }
+       /*No prefix*/
+      @keyframes neonAnimation {
+        from {
+          text-shadow: 0 0 10px #FF1177,
+                     0 0 20px  #FF1177,
+                     0 0 30px  #FF1177,
+                     0 0 40px  #FF1177,
+                     0 0 70px  #FF1177,
+                     0 0 80px  #FF1177,
+                     0 0 100px #FF1177,
+                     0 0 150px #FF1177;
+        }
+        to {
+          text-shadow: 0 0 5px #FF1177,
+                0 0 10px #FF1177,
+                0 0 15px #FF1177,
+                0 0 20px #FF1177,
+                0 0 35px #FF1177,
+                0 0 40px #FF1177,
+                0 0 50px #FF1177,
+                0 0 75px #FF1177;
+  }
+}
+
 *{
 	margin: 0;
-	background-color: black;
+	padding: 0;
 }
 
 html{
@@ -9,6 +85,15 @@ html{
   	overflow: hidden;
 }
 
+@font-face {
+  	font-family: 'Monoton';
+  	font-style: normal;
+  	font-weight: 400;
+  	src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+}
+
+/*landing CSS*/
+/*animated background*/
 .landing-animation-wrapper{
   	height: 1500px;
   	width: 1500px;
@@ -38,18 +123,31 @@ html{
     100%{ transform: rotate(360deg); }  
 }
 
-.text-box {
-	display: block;
-	font-family: futura;
-	text-align: center;
-	font-size: 27px; 
+.landing-text-box {
   	position: absolute;
   	z-index: 4; 
-  	color: #df0020;
-  	font-weight: bold;
-  	padding: 10px;
-  	background-color: rgba(0, 0, 0, 0.3);
 }
+
+.landing-button{
+	font-family: Monoton;
+	text-decoration: none;
+	text-align:center;
+  	font-size:4.5em;
+  	margin:20px 0 20px 0;
+  	color:#FFF;
+  	-webkit-animation: neonAnimation 1.5s ease-in-out infinite alternate;
+  	-moz-animation: neonAnimation 1.5s ease-in-out infinite alternate;
+  	animation: neonAnimation 1.5s ease-in-out infinite alternate; 
+}
+
+.landing-button:hover {
+  	color: #FF1177;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+/*
 .about-wrapper {
 	text-align: center;
 	width: 40%;
@@ -57,7 +155,7 @@ html{
 
 .grant-wrapper {
 	color: white;
-}
+}*/
 
 
 
