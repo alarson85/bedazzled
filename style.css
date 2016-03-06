@@ -85,6 +85,7 @@ html{
   	overflow: hidden;
 }
 
+/*Font for Intro*/
 @font-face {
   	font-family: 'Monoton';
   	font-style: normal;
@@ -92,7 +93,8 @@ html{
   	src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
 }
 
-/*landing CSS*/
+/*Itro Page*/
+
 /*animated background*/
 .landing-animation-wrapper{
   	height: 2000px;
@@ -197,16 +199,16 @@ html{
 	align-items: center;
 }
 
- #main-wrapper{
+/*/#main-wrapper{
  	margin-top: 0; 
- 	/*background-color: black;*/
+ 	background-color: black;
  	z-index: 5;
 	background-image: url('graphics/Snake-g.png');
 	width: 100%;
 	height:1200px;
 	background-position: right;
 	background-repeat: no-repeat;
-}
+}*/
 
 /*.wish-page{
 
@@ -234,7 +236,7 @@ html{
 
 .prismo-contain {
   position: relative;
-  bottom: -600px;
+  bottom: -620px;
   left: 0;
   /*margin: 125px auto;*/
   width: 220px;
@@ -721,6 +723,26 @@ p.speech
 	font-family: futura; 
 
 }
+
+.grant-background{
+	background-image: url('graphics/Snake-g.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 1343px;
+}
+
+}
+
+.grant-wrapper {
+	
+	height: 900px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
 
 /*
 .about-wrapper {
