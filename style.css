@@ -124,7 +124,7 @@ html{
 }
 
 .landing-text-box {
-	padding-top: 23%;
+	padding-top: 21%;
 	width: 100%;
 	height: 800px;
 	text-align: center;
@@ -137,8 +137,7 @@ html{
 	font-family: Monoton;
 	text-decoration: none;
 	text-align:center;
-  	font-size:5.5em;
-  	margin:20px 0 20px 0;
+  	font-size:6.5em;
   	color:#FFF;
   	-webkit-animation: neonAnimation 1.5s ease-in-out infinite alternate;
   	-moz-animation: neonAnimation 1.5s ease-in-out infinite alternate;
@@ -156,7 +155,7 @@ html{
 	/*z-index: 0;*/
 	background-image: url('graphics/Sabertooth.png');
 	width: 100%;
-	height: 15em;
+	height: 14em;
 	background-position: left;
 	background-repeat: no-repeat;
 	font-size: 100px;
@@ -225,14 +224,177 @@ html{
   justify-content: center;
 }
 
+.prismo-wrapper{
+	position: absolute;
+	height: 900px;
+	top: 0;
+	left: 100px;
+
+}
+
+.prismo-contain {
+  position: relative;
+  bottom: -600px;
+  left: 0;
+  /*margin: 125px auto;*/
+  width: 220px;
+  -webkit-transform: perspective(1100px) rotateX(-45deg);
+}
+
+.head {
+  position: absolute;
+  background: #ff979d;
+  border-radius: 50%;
+  width: 245px;
+  height: 180px;
+}
+
+.hair {
+  position: absolute;
+  top: 100px;
+  left: -1px;
+  background: #ff979d;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.hair-2 {
+  top: 65px;
+  left: -10px;
+}
+
+.hair-3 {
+  top: 30px;
+  left: -6px;
+}
+
+.hair-4 {
+  top: 6px;
+  left: 13px;
+}
+
+.hair-5 {
+  top: -7px;
+  left: 42px;
+}
+
+.hair-6 {
+  top: -12px;
+  left: 75px;
+}
+
+.hair-7 {
+  top: -10px;
+  left: 105px;
+}
+
+.hair-8 {
+  top: 125px;
+  left: 22px;
+}
+
+.prismo-eye {
+  position: absolute;
+  top: 40px;
+  left: 115px;
+  background: #f5bf3f;
+  border-radius: 50%;
+  width: 80px;
+  height: 50px;
+}
+
+.prismo-eye:after {
+  position: absolute;
+  top: 15px;
+  left: 35px;
+  background: #48cffe;
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  content: '';
+}
+
+.prismo-nose {
+  position: absolute;
+  top: 95px;
+  left: 220px;
+  background: #ff979d;
+  border-radius: 10px;
+  -webkit-transform: rotate(-10deg);
+  width: 50px;
+  height: 15px;
+}
+
+.prismo-nose:after {
+  position: absolute;
+  top: -26px;
+  left: -10px;
+  background: #ff979d;
+  border-radius: 10px;
+  -webkit-transform: rotate(55deg);
+  width: 70px;
+  height: 20px;
+  content: '';
+}
+
+.prismo-mouth {
+  position: absolute;
+  top: 123px;
+  left: 170px;
+  background: #f5bf3f;
+  border-radius: 50px;
+  width: 100px;
+  height: 12px;
+}
+
+.head:after {
+  position: absolute;
+  top: 150px;
+  left: 95px;
+  background: #ff979d;
+  width: 58px;
+  height: 100px;
+  content: '';
+}
+
+.prismo-body {
+  position: absolute;
+  top: 220px;
+  left: 25px;
+  background: #ff979d;
+  border-radius: 30px 30px 0 0;
+  width: 200px;
+  height: 300px;
+}
+
+.contain-2 {
+  position: relative;
+  top: 200px;
+  margin: auto;
+  width: 220px;
+  height: 400px;
+}
+
+/*.body-2 {
+  position: absolute;
+  top: 57px;
+  left: 27px;
+  background: #ff979d;
+  -webkit-transform: perspective(1100px) rotateX(70deg);
+  width: 189px;
+  height: 600px;
+}*/
+
+
 .jake {
 	position: absolute;
 	bottom: 0;
-	right:25em;
+	right: 10em;
 }
 
 .face {
-  background: #f5bf3f;
+  /*background: #f5bf3f;*/
   width: 400px;
   display: flex;
   justify-content: space-between;
@@ -504,20 +666,60 @@ html{
 }
 
 .adventure-logo {
-	margin: 150px 0 0 250px;
+  	width: 100%;
+  	height: 200px;
+  	position: relative;
+  	top: 100px;
+  	z-index: 5;
+}
+
+p.speech
+{
+	position: relative;
+	top: 250px;
+	width: 450px;
+	height: 100px;
+	font-family: futura;
+	font-size: 25px;
+	text-align: center;
+	line-height: 100px;
+	background-color: #fff;
+	border: 4px solid black;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+}
+
+.wish-input-wrapper {
+	padding: 300px 0 0 500px;
+
 }
 
 .wish-input {
 	border:4px solid #000000;
 	border-radius:40px;
-	height: 70px;
+	height: 100px;
 	width: 400px;
+	font-family: futura;
+	font-size: 25px;
+	text-align: center;
 }
 
 .wish-input-button {
 	font-size: 20px;
 	background-color: white;
 	border: 4px solid #000000;
+	text-align: center;
+	width: 70px;
+	/*height: 70px;*/
+	border-radius: 35px;
+	padding: 10px;
+	margin: 35px 0 0 400px;
+	font-family: futura; 
+
 }
 
 /*
