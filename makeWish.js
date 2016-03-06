@@ -3,9 +3,10 @@ angular.module('bedazzled').directive('makeWish', function(){
 	return {
 
 		template: `
-			<textarea ng-model="wish" placeholder="or, better yet, don't"></textarea>
-			<div></div>
-			<button ng-click="addWish(wish)">Make It</button>`
+			<div class="wish-input-wrapper">
+				<input class="wish-input" ng-model="wish" placeholder="I wish I had...">
+				<button class="wish-input-button" ng-click="addWish(wish)">Make It</button>
+			</div>`
 		, controller: function($scope, firebaseUrl, $firebaseArray){
 			var wishesRef = new Firebase(firebaseUrl.ref + 'wishes');
 

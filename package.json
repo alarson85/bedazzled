@@ -1,0 +1,22 @@
+{
+  "name": "bedazzled",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Ctrl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alarson85/bedazzled.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alarson85/bedazzled/issues"
+  },
+  "homepage": "https://github.com/alarson85/bedazzled#readme",
+  "dependencies": {
+    "sketch": "^0.2.0"
+  }
+}

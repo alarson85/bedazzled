@@ -2,9 +2,9 @@
 	<div>
 		<h1>See what fate has dealt</h1>
 		<div>Wishes:
-			<ul>
-				<li content="wish"></li>
-				<li content="answer"></li>
+			<ul ng-repeat="wish in wishes">
+				<li content="wish">{{wish}}</li>
+				<li content="answer">{{answer}}</li>
 
 			</ul>
 		</div>
