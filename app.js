@@ -19,7 +19,7 @@ angular.module('bedazzled', ['ui.router', 'firebase'])
 		})
 		.state('wish', {
 			url: '/wish'
-			, templateUrl: '/views/wish/wish.html'
+			, templateUrl: '/views/wishList/wishList.html'
 		})
 		.state('grant', {
 			url: '/grant'
@@ -27,7 +27,7 @@ angular.module('bedazzled', ['ui.router', 'firebase'])
 		})
 		.state('browse', {
 			url: '/browse'
-			, templateUrl:'/views/view/browse.html'
+			, templateUrl:'/views/wishList/wishList.html'
 		})
 		.state('about', {
 			url: '/about'

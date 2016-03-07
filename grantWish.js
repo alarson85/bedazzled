@@ -7,12 +7,14 @@ angular.module('bedazzled').directive('grantWish', function(){
 		// },
 
 		template: `
-			<ul>
-				<li ng-repeat="wish in wishes">{{wish.wish}}
-					<textarea ng-model="answer" placeholder="Your wish is granted, but..."></textarea>
-					<button ng-click="addWishRef(answer, wish.$id); answer=''">Grant</button>
-				</li>
-			<ul>`
+			<div class="wish-input" ng-repeat="wish in wishes">
+				<ul>
+					<li id="wish-input-font">{{wish.wish}}</li>
+					<li><textarea class-"answer-input" ng-model="answer" placeholder="Your wish is granted, but..."></textarea>
+						<button class="answer-button" ng-click="addWishRef(answer, wish.$id); answer=''">Grant</button>
+					</li>
+				<ul>
+			</div>`
 		, controller: function($firebaseArray, wishesService, $scope){
 			var wishesRef = new Firebase('https://bedazzled.firebaseio.com/wishes')
 			 $scope.wishes = $firebaseArray(wishesRef);

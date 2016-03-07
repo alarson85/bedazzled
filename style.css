@@ -80,9 +80,14 @@
 }
 
 html{
+	background-color: #080404;
 	height: 100%;
   	position: relative;
   	overflow: hidden;
+}
+
+ul {
+	list-style-type: none;
 }
 
 /*Font for Intro*/
@@ -156,6 +161,7 @@ html{
 .main-wrapper {
 	/*z-index: 0;*/
 	background-image: url('graphics/Sabertooth.png');
+	background-color: white;
 	width: 100%;
 	height: 14em;
 	background-position: left;
@@ -198,26 +204,6 @@ html{
 	height: 50%;
 	align-items: center;
 }
-
-/*/#main-wrapper{
- 	margin-top: 0; 
- 	background-color: black;
- 	z-index: 5;
-	background-image: url('graphics/Snake-g.png');
-	width: 100%;
-	height:1200px;
-	background-position: right;
-	background-repeat: no-repeat;
-}*/
-
-/*.wish-page{
-
-	background-image: url('graphics/Snake-g.png');
-	width: 100%;
-	height: 70em;
-	background-position: right;
-	background-repeat: no-repeat;
-}*/
 
 .wish-page {
 	height: 85em;
@@ -705,7 +691,6 @@ p.speech
 	border-radius:40px;
 	height: 100px;
 	width: 400px;
-	font-family: futura;
 	font-size: 25px;
 	text-align: center;
 }
@@ -724,35 +709,97 @@ p.speech
 
 }
 
-.grant-background{
-	background-image: url('graphics/Snake-g.png');
-	background-position: right;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 1343px;
+#background-grant {
+	background-color: #080404;
 }
-
+.grant-background{
+	width: 100%;
+	position: absolute;
+	top:0;
+	right: -63%;
+	border: 4px solid #080404;
 }
 
 .grant-wrapper {
-	
-	height: 900px;
+	color: white;
+	height: 1000px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 }
 
+.wish-list {
+	font-family: 'Poiret One', cursive;
+	font-size: 20px;
+	height: 100%;
+	text-align: left;
+/*	border: 10px solid orange;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
-/*
-.about-wrapper {
+.answer-button {
+	height: 20px;
+}
+
+.tarot-section {
+	font-family: 'Poiret One', cursive;
+
+	/*border: 10px solid orange;*/
+}
+
+.blank {
+	width: 550px;
+}
+
+.wish-input {
+	padding:5px 0;
+}
+
+.wishlist-wrapper {
+	color: white;
+}
+
+.view-pairs {
+	font-family: futura;
+	text-align: center;
+}
+
+img.bg {
+	min-height: 100%;
+  	min-width: 1024px;
+  	width: 100%;
+  	height: auto;
+  	top: 0;
+  	left: 0;
+  	position: relative;
+)
+
+@media screen and (max-width: 1024px) { 
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+#about-wrapper {
 	text-align: center;
 	width: 40%;
+	color: white;
+	font-family: sans-serif;
+	background-color: white;
 }
 
 .grant-wrapper {
 	color: white;
-}*/
+}
+
+#white {
+	color: white;
+}
 
 
 
