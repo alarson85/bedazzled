@@ -10,4 +10,5 @@ angular.module('bedazzled')
 		this.getWishes = function() {
 			return $http.get('https://bedazzled.firebaseio.com/wishes.json');
 		}
+
 });

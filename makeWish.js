@@ -11,7 +11,7 @@ angular.module('bedazzled').directive('makeWish', function(){
 			var wishesRef = new Firebase(firebaseUrl.ref + 'wishes');
 
 			$scope.addWish = function(newWish){
-				var newWishesRef = wishesRef.push({wish: newWish});
+				var newWishesRef = wishesRef.push({wish: newWish, grant:true, view: false});
 				$scope.wish = '';
 			}
 		}
